@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review | Festivalul de Teatru pentru Tineret "Doina Migleczi"</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="nav-logos">
+        <img src="images/logo-festival.png" alt="Logo Festival" class="nav-logo">
+        <img src="images/logo-trupa.png" alt="Logo Trupa" class="nav-logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Acasă</a></li>
+          <li><a href="index.html#despre">Despre</a></li>
+          <li><a href="regulament.html">Regulament</a></li>
+          <li><a href="inscrieri.html">Înscrieri</a></li>
+          <li><a href="feedback.html" aria-current="page">Review</a></li>
+          <li><a href="photobooth.html">Photobooth</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="feedback-page section-padding bg-alt">
+    <div class="container">
+      <h1 class="section-title">Review</h1>
+      <p class="feedback-intro">Ești spectator, participant/actor sau voluntar? Împărtășește-ne impresiile tale despre festival. Poți adăuga și o fotografie.</p>
+      <p id="feedback-status" class="feedback-status" role="status" aria-live="polite">Se încarcă feedback-ul...</p>
+
+      <form id="feedback-form" class="feedback-form">
+        <div class="form-field">
+          <label for="feedback-name">Numele tău</label>
+          <input id="feedback-name" name="author_name" type="text" maxlength="80" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="feedback-role">Sunt</label>
+          <select id="feedback-role" name="author_type" required>
+            <option value="">Alege categoria</option>
+            <option value="participant">Participant/Actor</option>
+            <option value="spectator">Spectator</option>
+            <option value="volunteer">Voluntar</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="feedback-message">Mesaj despre festival</label>
+          <textarea id="feedback-message" name="message" rows="5" maxlength="2000" required></textarea>
+        </div>
+        <div class="form-field">
+          <label for="feedback-photo">Fotografie (opțională, PNG/JPEG/WebP, maximum 5 MB)</label>
+          <input id="feedback-photo" name="photo" type="file" accept="image/png,image/jpeg,image/webp">
+        </div>
+        <button class="btn btn-primary enrollment-submit" type="submit">Publică feedback-ul</button>
+      </form>
+
+      <div id="feedback-list" class="feedback-list" aria-live="polite"></div>
+
+      <p id="admin-active-status" class="admin-active-status" role="status" hidden>
+        Mod Admin Activ
+        <button id="admin-logout" class="btn btn-secondary admin-login-button" type="button">Deconectare</button>
+      </p>
+      <dialog id="admin-modal" class="admin-modal" aria-labelledby="admin-modal-title">
+        <div class="admin-modal-content">
+          <button id="admin-modal-close" class="admin-modal-close" type="button" aria-label="Închide">&times;</button>
+          <h2 id="admin-modal-title">Administrare</h2>
+          <p class="admin-note">Autentifică-te cu contul de administrator configurat în Supabase.</p>
+          <form id="admin-login-form" class="admin-login-form">
+            <div class="form-field">
+              <label for="admin-email">E-mail administrator</label>
+              <input id="admin-email" name="email" type="email" autocomplete="username" required>
+            </div>
+            <div class="form-field">
+              <label for="admin-password">Parolă</label>
+              <input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+            </div>
+            <button class="btn btn-secondary admin-login-button" type="submit">Autentificare</button>
+          </form>
+          <div id="admin-session" class="admin-session" hidden>
+            <p>Ești autentificat ca administrator.</p>
+          </div>
+          <p id="admin-status" class="feedback-status" role="status" aria-live="polite"></p>
+        </div>
+      </dialog>
+      <p class="enrollment-return"><a href="index.html">Înapoi la pagina principală</a></p>
+    </div>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h3>Festivalul de Teatru</h3>
+        <p>Un proiect organizat de <strong>Trupa Leira</strong>.</p>
+        <p>E-mail: <a href="mailto:ftt.doinamigleczi@gmail.com" class="footer-email">ftt.doinamigleczi@gmail.com</a></p>
+      </div>
+      <div class="footer-socials">
+        <h4>Urmărește-ne pe Instagram</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/trupa.leira/" target="_blank" rel="noopener noreferrer" class="social-btn">
+            <i class="fab fa-instagram"></i> @trupa.leira
+          </a>
+          <a href="https://www.instagram.com/ftt.doinamigleczi/" target="_blank" rel="noopener noreferrer" class="social-btn">
+            <i class="fab fa-instagram"></i> @ftt.doinamigleczi
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61594877113387" target="_blank" rel="noopener noreferrer" class="social-btn">
+            Facebook • Festivalul de Teatru
+          </a>
+          <a href="https://www.facebook.com/share/1dTAzSZk7J/" target="_blank" rel="noopener noreferrer" class="social-btn">
+            Facebook • Trupa Leira
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; Festivalul de Teatru • Trupa Leira. Toate drepturile rezervate.</p>
+      <button id="admin-trigger" class="admin-trigger" type="button" aria-label="Administrare">·</button>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="feedback-config.js"></script>
+  <script src="feedback.js"></script>
+</body>
+</html>

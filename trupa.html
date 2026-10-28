@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trupa participantă | Festivalul de Teatru pentru Tineret "Doina Migleczi"</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="nav-logos">
+        <img src="images/logo-festival.png" alt="Logo Festival" class="nav-logo">
+        <img src="images/logo-trupa.png" alt="Logo Trupa" class="nav-logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Acasă</a></li>
+          <li><a href="index.html#despre">Despre</a></li>
+          <li><a href="regulament.html">Regulament</a></li>
+          <li><a href="inscrieri.html">Înscrieri</a></li>
+          <li><a href="feedback.html">Review</a></li>
+          <li><a href="photobooth.html">Photobooth</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="team-detail-page section-padding">
+    <div class="container">
+      <p id="team-not-found" class="feedback-status" role="status" hidden>Nu am găsit această trupă.</p>
+      <article id="team-detail" class="team-detail" hidden>
+        <h1 id="team-name" class="section-title"></h1>
+        <div id="team-cover"></div>
+        <div class="team-detail-facts">
+          <p><strong>Spectacol:</strong> <span id="team-show"></span></p>
+          <p><strong>Oraș:</strong> <span id="team-city"></span></p>
+          <p><strong>Coordonator:</strong> <span id="team-coordinator"></span></p>
+        </div>
+        <h2>Despre trupă și spectacol</h2>
+        <p id="team-description"></p>
+        <h2>Galerie foto</h2>
+        <div id="team-gallery" class="team-detail-gallery"></div>
+        <a class="team-detail-back" href="index.html">Înapoi la pagina principală</a>
+      </article>
+    </div>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h3>Festivalul de Teatru</h3>
+        <p>Un proiect organizat de <strong>Trupa Leira</strong>.</p>
+        <p>E-mail: <a href="mailto:ftt.doinamigleczi@gmail.com" class="footer-email">ftt.doinamigleczi@gmail.com</a></p>
+      </div>
+      <div class="footer-socials">
+        <h4>Urmărește-ne pe Instagram</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/trupa.leira/" target="_blank" rel="noopener noreferrer" class="social-btn">
+            <i class="fab fa-instagram"></i> @trupa.leira
+          </a>
+          <a href="https://www.instagram.com/ftt.doinamigleczi/" target="_blank" rel="noopener noreferrer" class="social-btn">
+            <i class="fab fa-instagram"></i> @ftt.doinamigleczi
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61594877113387" target="_blank" rel="noopener noreferrer" class="social-btn">
+            Facebook • Festivalul de Teatru
+          </a>
+          <a href="https://www.facebook.com/share/1dTAzSZk7J/" target="_blank" rel="noopener noreferrer" class="social-btn">
+            Facebook • Trupa Leira
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; Festivalul de Teatru • Trupa Leira. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+  <script src="trupa.js"></script>
+</body>
+</html>
