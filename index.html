@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festivalul de Teatru pentru Tineret "Doina Migleczi"</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font elegant pentru teatru -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Meniu de Navigație -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="nav-logos">
+        <img src="images/logo-festival.png" alt="Logo Festival" class="nav-logo">
+        <img src="images/logo-trupa.png" alt="Logo Trupa" class="nav-logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Acasă</a></li>
+          <li><a href="index.html#despre">Despre</a></li>
+          <li><a href="index.html#meet-the-team">Meet the team</a></li>
+          <li><a href="regulament.html">Regulament</a></li>
+          <li><a href="inscrieri.html">Înscrieri</a></li>
+          <li><a href="feedback.html">Review</a></li>
+          <li><a href="photobooth.html">Photobooth</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section / Pagina Principală -->
+  <section id="home" class="hero-section">
+    <div class="hero-carousel" aria-label="Galerie foto festival">
+      <img src="images/carousel/carusel-01.jpg" alt="Festival 01" class="hero-slide is-active">
+      <img src="images/carousel/carusel-02.jpeg" alt="Festival 02" class="hero-slide">
+      <img src="images/carousel/carusel-03.jpg" alt="Festival 03" class="hero-slide">
+      <img src="images/carousel/carusel-04.jpg" alt="Festival 04" class="hero-slide">
+      <img src="images/carousel/carusel-05.jpeg" alt="Festival 05" class="hero-slide">
+      <img src="images/carousel/carusel-06.jpeg" alt="Festival 06" class="hero-slide">
+      <img src="images/carousel/carusel-07.jpeg" alt="Festival 07" class="hero-slide">
+      <img src="images/carousel/carusel-08.jpg" alt="Festival 08" class="hero-slide">
+      <img src="images/carousel/carusel-09.jpeg" alt="Festival 09" class="hero-slide">
+      <img src="images/carousel/carusel-10.jpeg" alt="Festival 10" class="hero-slide">
+      <img src="images/carousel/carusel-11.jpeg" alt="Festival 11" class="hero-slide">
+      <img src="images/carousel/carusel-12.jpeg" alt="Festival 12" class="hero-slide">
+      <img src="images/carousel/carusel-13.jpeg" alt="Festival 13" class="hero-slide">
+      <img src="images/carousel/carusel-14.jpeg" alt="Festival 14" class="hero-slide">
+    </div>
+    <div class="container hero-content">
+      <div class="hero-logos">
+        <img src="images/logo-festival.png" alt="Logo Festival" class="hero-logo-main">
+        <span class="logo-separator">×</span>
+        <img src="images/logo-trupa.png" alt="Logo Trupa Organizatoare" class="hero-logo-sub">
+      </div>
+      <h1 class="hero-title">Festivalul de Teatru pentru Tineret<span class="hero-title-subline">Doina Migleczi</span></h1>
+      <p class="hero-subtitle">Ediția 2026 • Teatru, Pasiune & Arhitectură Scenică</p>
+      <div class="hero-buttons">
+        <a href="inscrieri.html" class="btn btn-primary">Înscrie Trupa Ta</a>
+        <a href="regulament.html" class="btn btn-secondary">Află Regulamentul</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secțiunea Despre / Info de legătură -->
+  <section id="despre" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Despre Festival</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Misiunea Noastră</h3>
+          <p>Festivalul aduce împreună 6 trupe de teatru din toată țara pentru a promova arta dramatică, expresivitatea scenică și spiritul de echipă.</p>
+        </div>
+        <div class="about-card">
+          <h3>Locație & Perioadă</h3>
+          <p>Evenimentul se va desfășura în perioada 19-22 februarie. Vă așteptăm la Sala Consiliului Județean Râmnicu Vâlcea și la Teatrul Anton Pann.</p>
+        </div>
+        <div class="about-card">
+          <h3>Organizatori</h3>
+          <p>Trupa Leira, Consiliul Judetean al Elevilor Valcea și Fundația Orpheus</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="meet-the-team" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Meet the team</h2>
+      <p class="team-intro">Oamenii din spatele festivalului, uniți de pasiunea pentru teatru.</p>
+      <div id="team-groups" class="team-groups" aria-label="Echipa festivalului"></div>
+    </div>
+  </section>
+
+  <dialog id="team-dialog" class="team-dialog" aria-labelledby="team-dialog-title">
+    <div class="team-dialog-content">
+      <button type="button" class="team-dialog-close" aria-label="Închide fereastra">&times;</button>
+      <h2 id="team-dialog-title"></h2>
+      <p id="team-dialog-description" class="team-dialog-description"></p>
+      <div id="team-members" class="team-members"></div>
+    </div>
+  </dialog>
+
+  <!-- Subsol (Footer) & Contact -->
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h3>Festivalul de Teatru</h3>
+        <p>Un proiect organizat de <strong>Trupa Leira</strong>.</p>
+        <p>E-mail: <a href="mailto:ftt.doinamigleczi@gmail.com" class="footer-email">ftt.doinamigleczi@gmail.com</a></p>
+      </div>
+      <div class="footer-socials">
+        <h4>Urmărește-ne pe Instagram</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/trupa.leira/" target="_blank" rel="noopener noreferrer" class="social-btn">
+            <i class="fab fa-instagram"></i> @trupa.leira
+          </a>
+          <a href="https://www.instagram.com/ftt.doinamigleczi/" target="_blank" rel="noopener noreferrer" class="social-btn">
+            <i class="fab fa-instagram"></i> @ftt.doinamigleczi
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61594877113387" target="_blank" rel="noopener noreferrer" class="social-btn">
+            Facebook • Festivalul de Teatru
+          </a>
+          <a href="https://www.facebook.com/share/1dTAzSZk7J/" target="_blank" rel="noopener noreferrer" class="social-btn">
+            Facebook • Trupa Leira
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; Festivalul de Teatru • Trupa Leira. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+  <script>
+    const slides = Array.from(document.querySelectorAll('.hero-slide'));
+
+    if (slides.length > 0) {
+      let currentSlide = 0;
+
+      setInterval(() => {
+        slides[currentSlide].classList.remove('is-active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('is-active');
+      }, 6500);
+    }
+  </script>
+  <script src="team.js"></script>
+
+</body>
+</html>
